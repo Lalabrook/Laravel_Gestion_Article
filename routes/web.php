@@ -8,7 +8,7 @@ Route::resource('articles', App\Http\Controllers\ArticleController::class);
 
 
 Route::get('/', function () {
-    dump(DB::select('SELECT * FROM  articles'));
+    dd('Go to localhost:8000\articles');
 });
 
 /*Route::get('crud', [LaravelCrud::class, "index"]);
